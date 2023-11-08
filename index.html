@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for answering this survey</p>
+        </header>
+        <section>
+            <form id="survey-form" method="post">
+                <fieldset class="1st">
+                    <label for="name" id="name-label">Name: <input type="name" id="name" placeholder="Enter your name" required></label>
+                    <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter you email" required></label>
+                    <label for="number" id="number-label">Age: <input type="number" id="number" min="13" max="120" placeholder="Enter your age" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="select-1"> Describe your status </label>
+                        <select id="dropdown">
+                            <option value="select">Select current status</option>
+                            <option value="student">Single</option>
+                            <option value="full-job">In a relationship</option>
+                            <option value="full-learner">Happy and contented</option>
+                            <option value="prefer">Prefer not to say</option>
+                            <option value="other">Others</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <label for="radio"> Would you recommend me to a friend?
+                        <label><input type="radio" id="definitely" class="inline" value="definitely" name="radio" checked> Definitely </label>
+                        <label><input type="radio" id="maybe" class="inline" value="maybe" name="radio"> Maybe </label>
+                        <label><input type="radio" id="not-sure" class="inline" value="not-sure" name="radio"> Not sure </label>
+                    </label>
+                </fieldset>
+                <fieldset>
+                        <label for="select-2"> What is your favorite attitude of me </label>
+                            <select class="select-2">
+                                <option value="option">Select an option</option>
+                                <option value="caring">Caring</option>
+                                <option value="positive">Positive</option>
+                                <option value="friendly">Friendly</option>
+                                <option value="compassionate">Compassionate</option>
+                            </select>
+                </fieldset>
+                <fieldset>
+                    <label for="checkbox"> What would you like to do with me?
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="inline" value="video"> Play Video Games </label>
+                            <label><input type="checkbox" class="inline" value="food"> Make some Delicious Foods </label>
+                            <label><input type="checkbox" class="inline" value="tour"> Go on a Food Tour </label>
+                            <label><input type="checkbox" class="inline" value="cinema"> Watch Cinema together </label>
+                            <label><input type="checkbox" class="inline" value="movie"> Swap Music and Movies </label>
+                            <label><input type="checkbox" class="inline" value="sport"> Go to a Sporting Event </label>
+                            <label><input type="checkbox" class="inline" value="beach"> Have a Day at the Beach </label>
+                            <label><input type="checkbox" class="inline" value="karaoke"> Sing Karaoke </label>
+                        </div>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="textarea"> Any comments or suggestion?
+                        <textarea rows="5" cols="40"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
